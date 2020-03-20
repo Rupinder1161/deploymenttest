@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Navbar from 'react-bootstrap/Navbar'
 
+const style = {
+    header:{
+        display:'flex',
+        flexDirection :'row',
+        backgroundColor:'green',
+        alignItems:'center',
+        justifyContent:'center'
+    }
+}
 export class Header extends Component {
     static propTypes = {
 
@@ -11,14 +20,10 @@ export class Header extends Component {
         return (
             <div>
                <Navbar>
-  <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-  <Navbar.Toggle />
-  <Navbar.Collapse className="justify-content-end">
-    <Navbar.Text>
-      Signed in as: <a href="#login">Mark Otto</a>
-    </Navbar.Text>
-  </Navbar.Collapse>
-</Navbar>
+               <nav style={style.header}>
+                   Gurpreet
+               </nav>
+             </Navbar>
             </div>
         )
     }
